@@ -3,6 +3,7 @@
 import string, sys
 from scapy.all import *
 
+# This function uses scapy for ARP Ping iterating over tuples of answered packed.
 def arpping(host):
 	try:
 		ans,unans=srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=host),timeout=2)
