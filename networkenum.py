@@ -3,6 +3,7 @@
 import string, optparse, sys, icmp_ping, arp_ping
 from scapy.all import *
 
+# This function uses scapy for ICMP Ping iterating over tuples of answered packed.
 def main():
 	try:
 		parser = optparse.OptionParser('usage: ' + sys.argv[0] + ' -H <target ip>')
