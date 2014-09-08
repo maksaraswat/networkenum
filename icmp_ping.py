@@ -3,6 +3,7 @@
 import string, sys
 from scapy.all import *
 
+# This function uses scapy for ICMP Ping iterating over tuples of answered packed.
 def icmpping(host):
 	try:
 		ans,unans=sr(IP(dst=host)/ICMP(), inter=0.05,timeout=0.5)
