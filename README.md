@@ -35,7 +35,7 @@ WARNING: No route found for IPv6 destination :: (no default route?)
 [*] b9:0d:6f:2e:ae:26 is the MAC address for host 192.168.1.24
 [*] 01:ce:30:30:13:3c is the MAC address for host 192.168.1.25
 
-+++ synscan +++
++++ SYN Scan +++
 
 root@kali:~# sudo python networkenum.py -S  192.168.1.23 445-450
 WARNING: No route found for IPv6 destination :: (no default route?)
