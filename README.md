@@ -4,9 +4,11 @@ networkenum
 Using Scapy framework for enumerating a network. networkenum.py is the main script that calls other scripts "icmp_ping.py", "arp_ping.py" and syn_scan.py. As more features will be added, networkenum.py will be updated to call them. You can read more about the project at my blog http://blog.l3g3ndary.org.
 
 Shout Outs:
+
 Special thanks to Dan Melfi for helping me whenever I got stuck.
 
 +++ networkenum.py +++
+
 root@kali:~# sudo python networkenum.py --help
 WARNING: No route found for IPv6 destination :: (no default route?)
 Usage: networkenum.py <-h for help>
@@ -18,6 +20,7 @@ Options:
   -S HOST     specify IP address and port (eg. 80 or 435-445) for SYN Scan
 
 +++ ICMP Ping +++
+
 root@kali:~# sudo python networkenum.py -I  192.168.1.23-27
 WARNING: No route found for IPv6 destination :: (no default route?)
 [*] 192.168.1.23 is alive and is Windows(TTL = 128)
@@ -25,6 +28,7 @@ WARNING: No route found for IPv6 destination :: (no default route?)
 [*] 192.168.1.25 is alive and is Windows(TTL = 128)
 
 +++ ARP Ping +++
+
 root@kali:~# sudo python networkenum.py -A  192.168.1.23-27
 WARNING: No route found for IPv6 destination :: (no default route?)
 [*] 0c:00:29:58:12:3c is the MAC address for host 192.168.1.23
@@ -32,6 +36,7 @@ WARNING: No route found for IPv6 destination :: (no default route?)
 [*] 01:ce:30:30:13:3c is the MAC address for host 192.168.1.25
 
 +++ synscan +++
+
 root@kali:~# sudo python networkenum.py -S  192.168.1.23 445-450
 WARNING: No route found for IPv6 destination :: (no default route?)
 192.168.1.23 	 microsoft_ds 	 SA
